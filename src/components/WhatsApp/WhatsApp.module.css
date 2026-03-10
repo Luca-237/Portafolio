@@ -1,0 +1,27 @@
+.floatButton {
+  position: fixed;
+  bottom: 30px;
+  left: 30px; /* Esquina inferior izquierda */
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.floatButton:hover {
+  transform: scale(1.1);
+}
+
+.floatButton img {
+  width: 35px;
+}
+.floatButton {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* Sombra más oscura */
+  left: 30px; /* Asegurar esquina inferior izquierda */
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  /* Paleta Oscura */
+  --bg-color: #080808;
+  --bg-card: #121212;
+  --text-primary: #eaeaea;
+  --text-secondary: #a0a0a0;
+  --border: #222222;
+  
+  /* Color de Acento: NARANJA */
+  --accent: #ff6b1a;         
+  --accent-hover: #ff8542;
+  --accent-shadow: rgba(255, 107, 26, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* --- ESTILO DEL CONTENEDOR DE PARTÍCULAS --- */
+.particle-canvas {
+  position: fixed; /* Fijo de fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Detrás del contenido */
+  pointer-events: none; /* Asegura que no interfiera con clicks en enlaces */
+}
+
+/* Estilos de sección base */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Para que el contenido esté sobre las partículas */
+}
+
+/* Selección de texto */
+::selection {
+  background-color: var(--accent);
+  color: white;
+}

@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+}
+
+/* Agregamos un brillo naranja sutil de fondo en el Hero */
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: var(--accent);
+  filter: blur(150px);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.name {
+  font-size: 7rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.skillBadge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent); /* Naranja */
+  border: 1px solid var(--border); /* Borde sutil */
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.skillBadge:hover {
+  background-color: var(--accent-shadow); /* Brillo naranja al pasar el cursor */
+  border-color: var(--accent);
+}
+.actions {
+  margin-top: 3rem;
+}
+
+.cvButton {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cvButton:hover {
+  background-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 15px var(--accent-shadow);
+  transform: translateY(-2px);
+}
