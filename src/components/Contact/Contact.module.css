@@ -104,7 +104,7 @@
 }
 
 .links a {
-  color: var(--accent); /* Enlaces principales naranjas */
+  color: var(--accent); 
 }
 
 .links a:hover {
@@ -112,19 +112,19 @@
 }
 
 .form input, .form textarea {
-  background: var(--bg-card); /* Campos oscuros */
+  background: var(--bg-card); 
   border: 1px solid var(--border);
   color: var(--text-primary);
   transition: all 0.3s ease;
 }
 
 .form input:focus, .form textarea:focus {
-  border-color: var(--accent); /* Borde naranja al escribir */
+  border-color: var(--accent); 
   box-shadow: 0 0 10px var(--accent-shadow);
 }
 
 .submitBtn {
-  background: var(--accent); /* Botón naranja completo */
+  background: var(--accent); 
   color: white;
 }
 

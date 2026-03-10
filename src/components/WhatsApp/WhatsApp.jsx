@@ -1,7 +1,7 @@
 import styles from './WhatsApp.module.css';
 
 const WhatsApp = () => {
-  const phoneNumber = "543534093230"; // Tu número con código de país
+  const phoneNumber = "543534093230"; 
   const msg = encodeURIComponent("Hola Luca, vi tu portfolio y me gustaría contactarte.");
   
   return (

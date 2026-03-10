@@ -9,7 +9,7 @@ const About = () => {
       <h2 className={styles.sectionTitle}>¿Quien soy?</h2>
       
       <div className={styles.terminalContainer}>
-        {/* Cabecera de la terminal */}
+        {}
         <div className={styles.terminalHeader}>
           <div className={styles.windowControls}>
             <span className={styles.controlRed}></span>
@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Cuerpo de la terminal */}
+        {}
         <div className={styles.terminalBody}>
           {activeTab === 'sobre_mi' && (
             <div className={styles.codeContent}>

@@ -2,7 +2,6 @@ import { useForm, ValidationError } from '@formspree/react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-  // Reemplaza "TU_ID_AQUÍ" por el ID que te dio Formspree
   const [state, handleSubmit] = useForm("mykneldg");
 
   if (state.succeeded) {

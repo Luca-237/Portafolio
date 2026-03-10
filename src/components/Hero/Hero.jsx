@@ -14,7 +14,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Nuevo botón para descargar CV */}
+      {}
       <div className={styles.actions}>
         <a 
           href="/CV_Luca_Morales.pdf" 

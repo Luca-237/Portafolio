@@ -7,7 +7,7 @@ const Projects = () => {
       description: "Sistema frontend con React simulando un autoservicio, se utilizó Cloudinary para la gestión de imágenes.",
       tech: ["Node.js", "React", "Cloudinary"],
       link: "https://autoservicio-xi.vercel.app/",
-      image: "/autoservicio.png" // Nombre exacto de la imagen en public/
+      image: "/autoservicio.png" 
     },
     {
       title: "Clima",
@@ -31,7 +31,7 @@ const Projects = () => {
       <div className={styles.grid}>
         {projectList.map((project, index) => (
           <div key={index} className={styles.card}>
-            {/* Contenedor de la imagen nueva */}
+            {}
             <div className={styles.imageContainer}>
               <img 
                 src={project.image} 

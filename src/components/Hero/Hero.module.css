@@ -2,7 +2,6 @@
   position: relative;
 }
 
-/* Agregamos un brillo naranja sutil de fondo en el Hero */
 .hero::before {
   content: '';
   position: absolute;
@@ -39,15 +38,15 @@
 .skillBadge {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent); /* Naranja */
-  border: 1px solid var(--border); /* Borde sutil */
+  color: var(--accent); 
+  border: 1px solid var(--border); 
   padding: 8px 16px;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 
 .skillBadge:hover {
-  background-color: var(--accent-shadow); /* Brillo naranja al pasar el cursor */
+  background-color: var(--accent-shadow); 
   border-color: var(--accent);
 }
 .actions {

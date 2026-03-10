@@ -1,7 +1,7 @@
 .floatButton {
   position: fixed;
   bottom: 30px;
-  left: 30px; /* Esquina inferior izquierda */
+  left: 30px; 
   width: 60px;
   height: 60px;
   background-color: #25d366;
@@ -22,6 +22,6 @@
   width: 35px;
 }
 .floatButton {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* Sombra más oscura */
-  left: 30px; /* Asegurar esquina inferior izquierda */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5); 
+  left: 30px; 
 }

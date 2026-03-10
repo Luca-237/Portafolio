@@ -1,5 +1,5 @@
 .aboutSection {
-  background-color: rgba(13, 17, 23, 0.014); /* Un poco de transparencia */
+  background-color: rgba(13, 17, 23, 0.014); 
   backdrop-filter: blur(2px);
 }
 
@@ -11,7 +11,7 @@
 }
 
 .terminalContainer {
-    background-color: rgba(13, 17, 23, 0.85); /* Un poco de transparencia */
+    background-color: rgba(13, 17, 23, 0.85); 
   backdrop-filter: blur(10px);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-/* Header de la terminal */
+
 .terminalHeader {
   background-color: #161b22;
   border-bottom: 1px solid var(--border);
@@ -76,11 +76,11 @@
   background-color: rgba(255, 107, 26, 0.05);
 }
 
-/* Cuerpo de la terminal */
+
 .terminalBody {
   padding: 24px;
   min-height: 350px;
-  font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Tipografía de código */
+  font-family: 'Fira Code', 'Courier New', Courier, monospace; 
 }
 
 .prompt {
@@ -95,20 +95,20 @@
 }
 
 .path {
-  color: #58a6ff; /* Azul estilo consola */
+  color: #58a6ff; 
 }
 
-/* Contenido de cada pestaña */
+
 .markdownOutput {
   color: #c9d1d9;
   font-size: 1.05rem;
   line-height: 1.8;
-  font-family: 'Inter', system-ui, sans-serif; /* Texto normal para leer mejor */
+  font-family: 'Inter', system-ui, sans-serif; 
 }
 
 .jsonOutput {
-  color: #7ee787; /* Verde estilo JSON strings */
+  color: #7ee787; 
   font-size: 1rem;
   line-height: 1.6;
-  white-space: pre-wrap; /* Mantiene la indentación del JSON */
+  white-space: pre-wrap; 
 }

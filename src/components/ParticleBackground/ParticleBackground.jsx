@@ -1,11 +1,10 @@
 import { useEffect, useState, useCallback } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // Cargamos la versión liviana
+import { loadSlim } from "@tsparticles/slim"; 
 
 const ParticleBackground = () => {
   const [init, setInit] = useState(false);
 
-  // Esta función inicializa el motor de tsparticles una sola vez
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -15,17 +14,15 @@ const ParticleBackground = () => {
   }, []);
 
   const particlesLoaded = (container) => {
-    // Aquí puedes loguear algo si necesitas verificar que cargó
-    // console.log("Partículas cargadas:", container);
   };
 
-  // --- CONFIGURACIÓN DE LAS PARTÍCULAS ---
+
   const options = {
     fpsLimit: 120,
     interactivity: {
       events: {
-        onClick: { enable: false }, // No interactuar al click para mantenerlo minimalista
-        onHover: { enable: true, mode: "repulse" }, // Sutil repulsión al pasar el mouse
+        onClick: { enable: false }, 
+        onHover: { enable: true, mode: "repulse" }, 
         resize: true,
       },
       modes: {
@@ -34,29 +31,29 @@ const ParticleBackground = () => {
     },
     particles: {
       color: {
-        value: "#ff6b1a", // TU COLOR DE ACENTO NARANJA
+        value: "#ff6b1a", 
       },
       links: {
         color: "#ff6b1a",
         distance: 150,
-        enable: true, // Habilitamos las líneas entre partículas para el toque técnico
-        opacity: 0.8, // Líneas extremadamente tenues
+        enable: true, 
+        opacity: 0.8, 
         width: 1,
       },
       move: {
         direction: "none",
         enable: true,
-        outModes: { default: "out" }, // Reaparecen por el otro lado
+        outModes: { default: "out" }, 
         random: true,
-        speed: 1, // MOVIMIENTO MUY LENTO
+        speed: 1, 
         straight: false,
       },
       number: {
-        density: { enable: true, area: 800 }, // Cantidad basada en el área
-        value: 70, // Número de partículas equilibrado
+        density: { enable: true, area: 800 }, 
+        value: 70, 
       },
       opacity: {
-        value: { min: 2, max: 4 }, // Sutiles y con opacidad variable
+        value: { min: 2, max: 4 }, 
         animation: {
           enable: true,
           speed: 1,
@@ -67,21 +64,20 @@ const ParticleBackground = () => {
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 2 }, // Partículas pequeñas
+        value: { min: 1, max: 2 }, 
       },
     },
     detectRetina: true,
-    fullScreen: { enable: false }, // Se controla por CSS en el contenedor
+    fullScreen: { enable: false }, 
   };
 
-  if (!init) return null; // No renderizar nada hasta que el motor esté listo
+  if (!init) return null; 
 
   return (
     <Particles
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={options}
-      // Le damos una clase CSS para posicionarlo de fondo
       className="particle-canvas" 
     />
   );
