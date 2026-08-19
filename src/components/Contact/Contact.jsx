@@ -9,7 +9,7 @@ const Contact = () => {
       <section id="contacto" className={styles.contactSection}>
         <div className={styles.successMessage}>
           <h2>¡Mensaje enviado con éxito!</h2>
-          <p>Gracias por contactarme, Luca te responderá a la brevedad.</p>
+          <p>Gracias por contactarme, voy a responderte a la brevedad.</p>
         </div>
       </section>
     );
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className={styles.info}>
           <h2 className={styles.title}>Hablemos.</h2>
           <p className={styles.subtitle}>
-            ¿Tenés un proyecto en mente o alguna consulta técnica? 
+            ¿Tenés un proyecto en mente o alguna consulta técnica?
             Escribime y nos ponemos en marcha.
           </p>
           <div className={styles.links}>
@@ -31,36 +31,36 @@ const Contact = () => {
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input 
+          <input
             id="name"
             name="name"
-            type="text" 
-            placeholder="Nombre" 
-            required 
+            type="text"
+            placeholder="Nombre"
+            required
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-          <input 
+          <input
             id="email"
             name="email"
-            type="email" 
-            placeholder="Email" 
-            required 
+            type="email"
+            placeholder="Email"
+            required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-          <textarea 
+          <textarea
             id="message"
             name="message"
-            placeholder="Tu mensaje..." 
-            rows="5" 
+            placeholder="Tu mensaje..."
+            rows="5"
             required
           ></textarea>
           <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-          <button 
-            type="submit" 
-            className={styles.submitBtn} 
+          <button
+            type="submit"
+            className={styles.submitBtn}
             disabled={state.submitting}
           >
             {state.submitting ? 'Enviando...' : 'Enviar mensaje'}
